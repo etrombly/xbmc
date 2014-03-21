@@ -248,6 +248,9 @@
 		5558ED10176396CD00118C35 /* StereoscopicsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5558ED0E176396CD00118C35 /* StereoscopicsManager.cpp */; };
 		55611BA31766672F00754072 /* RenderFlags.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55611BA21766672F00754072 /* RenderFlags.cpp */; };
 		55D3604E1826CAB900DA66D2 /* OverlayRendererGUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55D3604C1826CAB900DA66D2 /* OverlayRendererGUI.cpp */; };
+		68EDBD5A18DBECD800784A21 /* JoystickHat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68EDBD5918DBECD800784A21 /* JoystickHat.cpp */; };
+		68EDBD5B18DBECD800784A21 /* JoystickHat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68EDBD5918DBECD800784A21 /* JoystickHat.cpp */; };
+		68EDBD5C18DBECD800784A21 /* JoystickHat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68EDBD5918DBECD800784A21 /* JoystickHat.cpp */; };
 		7C0B98A4154B79C30065A238 /* AEDeviceInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7C0B98A1154B79C30065A238 /* AEDeviceInfo.cpp */; };
 		7C140989183224B8009F9411 /* ISetting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7C14096F183224B8009F9411 /* ISetting.cpp */; };
 		7C14098A183224B8009F9411 /* ISetting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7C14096F183224B8009F9411 /* ISetting.cpp */; };
@@ -3761,6 +3764,8 @@
 		55611BA41766679200754072 /* RenderFlags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderFlags.h; sourceTree = "<group>"; };
 		55D3604C1826CAB900DA66D2 /* OverlayRendererGUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OverlayRendererGUI.cpp; sourceTree = "<group>"; };
 		55D3604D1826CAB900DA66D2 /* OverlayRendererGUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayRendererGUI.h; sourceTree = "<group>"; };
+		68EDBD5918DBECD800784A21 /* JoystickHat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JoystickHat.cpp; sourceTree = "<group>"; };
+		68EDBD5D18DBED7A00784A21 /* JoystickHat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoystickHat.h; sourceTree = "<group>"; };
 		6E2FACD20E26E92800DF79EA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E97BDBF0DA2B620003A2A89 /* EventClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventClient.h; sourceTree = "<group>"; };
 		6E97BDC00DA2B620003A2A89 /* EventPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventPacket.h; sourceTree = "<group>"; };
@@ -4466,7 +4471,6 @@
 		DFF8C8C117F618D8005B16DB /* JoystickManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JoystickManager.cpp; sourceTree = "<group>"; };
 		DFF8C8C217F618D8005B16DB /* JoystickManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoystickManager.h; sourceTree = "<group>"; };
 		DFF8C8CC17F6191A005B16DB /* IInputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IInputHandler.h; sourceTree = "<group>"; };
-		DFF8C8D017F61937005B16DB /* IJoystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJoystick.h; sourceTree = "<group>"; };
 		DFFC52CB17527B3100C937AB /* XBMC.frappliance */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XBMC.frappliance; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFFC52CF17527E8B00C937AB /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon.png; path = media/AppIcon.png; sourceTree = "<group>"; };
 		DFFC52D117527EFC00C937AB /* XBMC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = XBMC.png; path = xbmc/osx/atv2/XBMC.png; sourceTree = "<group>"; };
@@ -6166,11 +6170,12 @@
 		18B7C8C61294252E009E7A26 /* input */ = {
 			isa = PBXGroup;
 			children = (
+				68EDBD5D18DBED7A00784A21 /* JoystickHat.h */,
+				68EDBD5918DBECD800784A21 /* JoystickHat.cpp */,
 				E4991332174E5E5C00741B6D /* touch */,
 				18B7C8CB12942546009E7A26 /* ButtonTranslator.cpp */,
 				18B7C8CC12942546009E7A26 /* ButtonTranslator.h */,
 				DFF8C8CC17F6191A005B16DB /* IInputHandler.h */,
-				DFF8C8D017F61937005B16DB /* IJoystick.h */,
 				DFAB049613F8376700B70BFB /* InertialScrollingHandler.cpp */,
 				DFAB049713F8376700B70BFB /* InertialScrollingHandler.h */,
 				DFF8C8BF17F618D8005B16DB /* Joystick.cpp */,
@@ -10129,6 +10134,7 @@
 				E38E21890D25F9FD00618676 /* PltService.cpp in Sources */,
 				E38E218A0D25F9FD00618676 /* PltSsdp.cpp in Sources */,
 				E38E218B0D25F9FD00618676 /* PltStateVariable.cpp in Sources */,
+				68EDBD5A18DBECD800784A21 /* JoystickHat.cpp in Sources */,
 				E38E218D0D25F9FD00618676 /* PltTaskManager.cpp in Sources */,
 				E38E218E0D25F9FD00618676 /* PltThreadTask.cpp in Sources */,
 				E38E218F0D25F9FD00618676 /* PltUPnP.cpp in Sources */,
@@ -11323,6 +11329,7 @@
 				DFF0F20517528350002DA3A4 /* HTSPDirectory.cpp in Sources */,
 				DFF0F20617528350002DA3A4 /* HTSPSession.cpp in Sources */,
 				DFF0F20717528350002DA3A4 /* HTTPDirectory.cpp in Sources */,
+				68EDBD5C18DBECD800784A21 /* JoystickHat.cpp in Sources */,
 				DFF0F20817528350002DA3A4 /* HTTPFile.cpp in Sources */,
 				DFF0F20917528350002DA3A4 /* IDirectory.cpp in Sources */,
 				DFF0F20A17528350002DA3A4 /* IFile.cpp in Sources */,
@@ -12887,6 +12894,7 @@
 				E4991485174E606500741B6D /* GUIDialogFullScreenInfo.cpp in Sources */,
 				E4991486174E606500741B6D /* GUIDialogTeletext.cpp in Sources */,
 				E4991487174E606500741B6D /* GUIDialogVideoBookmarks.cpp in Sources */,
+				68EDBD5B18DBECD800784A21 /* JoystickHat.cpp in Sources */,
 				E4991488174E606500741B6D /* GUIDialogVideoInfo.cpp in Sources */,
 				E4991489174E606500741B6D /* GUIDialogVideoOSD.cpp in Sources */,
 				E499148A174E606500741B6D /* GUIDialogVideoOverlay.cpp in Sources */,
